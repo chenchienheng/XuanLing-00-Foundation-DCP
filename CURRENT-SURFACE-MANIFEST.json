@@ -2,20 +2,171 @@
   "repository_role": "PUBLIC_DCP_POLE_PROJECTION_CARRIER",
   "projection_focus": "DCP",
   "runtime": false,
+  "promotion": false,
   "native_source_root": false,
   "repo_is_pole_authority": false,
   "tri_pole_architecture": true,
   "reader_priority": [
     "README.md",
     "CURRENT-SURFACE-MANIFEST.json",
+    "LIFECYCLE_DEPENDENCY_CHAIN_KERNEL.md",
     "PUBLIC-SURFACE-POLICY.md",
     "STATUS.md"
   ],
-  "current_public_surfaces": {
-    "human_zh_tw": ["README.md", "STATUS.md"],
-    "professional_en": ["README.md", "PUBLIC-SURFACE-POLICY.md"],
-    "canonical_machine": ["CURRENT-SURFACE-MANIFEST.json"]
+  "classification_model": {
+    "primary": "STABLE_EXISTENCE_AND_LIFECYCLE_RELATIONS",
+    "core_chain": [
+      "identity",
+      "dependency",
+      "source_carrier",
+      "state",
+      "authority",
+      "evidence_claim_ceiling",
+      "materiality",
+      "gate_dispatch",
+      "action_effect",
+      "return",
+      "reconciliation",
+      "reentry_rebuild",
+      "metabolism"
+    ],
+    "do_not_classify_by_extension": true,
+    "do_not_treat_folder_as_ontology": true,
+    "do_not_treat_carrier_as_identity": true
   },
+  "carrier_model": {
+    "carrier_is_secondary_metadata": true,
+    "examples": [
+      "markdown", "yaml", "json", "pdf", "spreadsheet", "database", "sql",
+      "cad_dxf_dwg", "bim_ifc", "3d_glb_gltf", "image", "audio", "video",
+      "notebook", "source_code", "binary", "script", "archive", "api_resource",
+      "issue_pr_branch", "drive_object", "saas_record", "local_runtime", "model_output"
+    ],
+    "same_existence_may_have_multiple_carriers": true,
+    "carrier_change_does_not_change_identity": true,
+    "extension_is_not_taxonomy": true,
+    "identical_text_or_sha_establishes_same_event": false
+  },
+  "dispatch_views": {
+    "status": "OPTIONAL_PROJECTION_AXES_NOT_ONTOLOGY",
+    "axes": ["domain", "authority", "state", "circle", "pole", "cloud"],
+    "use_only_when_material": true,
+    "order_is_not_mandatory": true
+  },
+  "ccf_gates": {
+    "completeness": "dependency_input_and_required_field_sufficiency",
+    "compatibility": "lawful_source_state_authority_vocabulary_schema_and_representation_composition",
+    "fidelity": "projection_backmap_transform_loss_and_rebuild_faithfulness"
+  },
+  "representation_integrity": {
+    "registry_index_inventory_is_native_authority": false,
+    "registry_or_inventory_presence_establishes_current": false,
+    "registry_or_inventory_absence_erases_existence": false,
+    "review_plan_or_acceptance_matrix_is_completed_verification": false,
+    "resolved_thread_is_global_closeout": false,
+    "declared_state_and_review_vocabulary_required": true,
+    "duplicate_machine_keys_allowed": false,
+    "file_name_embedded_version_revision_alignment_required": true,
+    "required_contract_field_must_be_representable": true,
+    "pointer_resolution_required_for_rebuild": true,
+    "syntax_parse_success_is_semantic_compatibility": false,
+    "failure_action": "HOLD_AFFECTED_REPRESENTATION_ADMISSION_OR_REBUILD"
+  },
+  "security_boundary": {
+    "readable_content_is_instruction_authority": false,
+    "doctrine_edit_is_self_validating": false,
+    "inbound_signal_is_trusted_command_by_default": false,
+    "external_writeback_enabled_by_default": false,
+    "credential_or_secret_allowed_in_repository_or_unbounded_model_context": false,
+    "successful_test_authorizes_unattended_runtime": false,
+    "required_before_external_mutation": [
+      "lawful_authority",
+      "qualified_input_identity_freshness_rights_purpose",
+      "strict_schema_and_effect_ceiling",
+      "least_privilege_credential_binding",
+      "audit_log",
+      "rollback_or_recovery",
+      "failure_return",
+      "first_activation_human_review"
+    ]
+  },
+  "execution_resource_boundary": {
+    "applies_to": ["agent_like", "long_running", "batch", "multi_tool", "multi_branch", "multi_agent"],
+    "required": [
+      "task_identity_and_affected_scope",
+      "source_carrier_habitat",
+      "authorized_tool_allowlist",
+      "token_cost_time_session_budget",
+      "retry_concurrency_branch_limit",
+      "context_replay_snapshot_policy",
+      "stop_condition_checkpoint",
+      "artifact_verification",
+      "rollback_or_recovery",
+      "human_escalation",
+      "return_resume"
+    ],
+    "web_enabled_by_default": false,
+    "writeback_enabled_by_default": false,
+    "background_long_run_enabled_by_default": false,
+    "multi_agent_escalation_enabled_by_default": false,
+    "missing_budget_retry_or_stop_action": "HOLD_AFFECTED_EXECUTION",
+    "estimate_is_actual_cost_or_bill": false
+  },
+  "temporal_lineage": {
+    "record_is_event": false,
+    "replay_copy_fork_revision_return_is_original_event": false,
+    "modified_time_or_recency_establishes_current": false,
+    "required_for_material_state_transition": [
+      "event_identity",
+      "source_origin",
+      "time",
+      "surface_carrier",
+      "state_before",
+      "action_effect",
+      "state_after",
+      "evidence_impact",
+      "return_review"
+    ],
+    "missing_lineage_action": "HOLD_AFFECTED_ADMISSION_OR_REBUILD"
+  },
+  "return_closure": {
+    "ladder": [
+      "produced",
+      "routed",
+      "actual_read",
+      "materiality_resolved",
+      "receiver_native_disposition",
+      "reconciled",
+      "rebuild_applied_or_no_rebuild_with_reason"
+    ],
+    "producer_can_ack_for_receiver": false
+  },
+  "metabolism": {
+    "dual_stage": ["predecessor_metabolism", "consequence_metabolism"],
+    "withdraw_surfaces": ["reader", "routing", "navigation", "wake", "rebuild"],
+    "archive_rename_move_is_complete": false,
+    "zombie_reconstruction_prohibited": true
+  },
+  "disclosure_control": {
+    "classes": ["INTERNAL", "PUBLIC_CANDIDATE", "PUBLIC_APPROVED", "WITHHELD"],
+    "public_safe_is_public_approved": false,
+    "repository_placement_is_release_authorization": false,
+    "publication_translation_serialization_transfers_ownership": false,
+    "required_before_release": [
+      "source_ownership_and_lawful_use",
+      "audience_and_purpose",
+      "privacy_and_sensitivity",
+      "evidence_and_claim_ceiling",
+      "retention_redistribution_derivative_constraints",
+      "release_authority"
+    ]
+  },
+  "current_public_surfaces": {
+    "human_zh_tw": ["README.md", "LIFECYCLE_DEPENDENCY_CHAIN_KERNEL.md", "STATUS.md"],
+    "professional_en": ["LIFECYCLE_DEPENDENCY_CHAIN_KERNEL.md", "PUBLIC-SURFACE-POLICY.md"],
+    "canonical_machine": ["CURRENT-SURFACE-MANIFEST.json", "LIFECYCLE_DEPENDENCY_CHAIN_KERNEL.md"]
+  },
+  "current_successor_kernel": "LIFECYCLE_DEPENDENCY_CHAIN_KERNEL.md",
   "tri_repository_projection_map": {
     "DCP-Pole-Projection": "dependency_state_authority_return_rebuild_weighted",
     "Ideas-Pole-Projection": "meaning_placement_navigation_experience_weighted",
@@ -24,25 +175,18 @@
   "shared_belt_semantics": {
     "is_fourth_pole": false,
     "is_authority_root": false,
-    "allowed": ["pointer", "receipt", "receiver_state", "return", "reconciliation_status", "reentry_pointer", "rebuild_pointer"],
+    "allowed": ["pointer", "wake", "receipt", "receiver_state", "return", "conflict", "reentry_pointer", "rebuild_pointer"],
     "native_body_copy_default": false
   },
-  "legacy_root_families": [
-    "00_meta",
-    "00_mother-law",
-    "01_native-board",
-    "01_runtime-spine",
-    "02_runtime-ops",
-    "02_translation-layer",
-    "03_board-orchestration",
-    "03_field-governance",
-    "04_adapter-layer",
-    "04_interface-layer",
-    "05_XLEN_Reserve_Unenabled",
-    "05_topology"
-  ],
-  "legacy_interpretation": "HISTORICAL_OR_COMPATIBILITY_UNLESS_EXPLICITLY_RE-ADMITTED",
-  "promotion_rule": "REPOSITORY_LOCATION_NAME_OR_RECENCY_DOES_NOT_ESTABLISH_CURRENT_OR_AUTHORITY",
+  "legacy_interpretation": "HISTORICAL_OR_COMPATIBILITY_UNLESS_EXPLICITLY_RE_ADMITTED",
+  "historical_reader_shield": {
+    "root_legacy_visibility_does_not_establish_current": true,
+    "stale_register_reference_does_not_reactivate_retired_artifact": true,
+    "successor_or_explicit_readmission_required": true,
+    "whole_body_reread_as_current": false,
+    "security_temporal_resource_registry_review_predecessors_required_for_normal_read": false
+  },
+  "promotion_rule": "LOCATION_NAME_EXTENSION_FORMAT_RECENCY_TIMESTAMP_READABILITY_ACTIVITY_RESOURCE_AVAILABILITY_REGISTRY_PRESENCE_REVIEW_STATUS_OR_TEST_SUCCESS_DOES_NOT_ESTABLISH_IDENTITY_CURRENT_AUTHORITY_RUNTIME_EVENT_EQUIVALENCE_VERIFICATION_OR_COMPLETION",
   "release_rule": "PUBLIC_SAFE_AND_RELEASE_APPROVED_ONLY",
-  "claim_ceiling": "Public DCP-oriented CoreTri projection; not DCP Native Body, runtime, canon, or authority root"
+  "claim_ceiling": "Public DCP-oriented CoreTri projection; not DCP Native Body, runtime, canon, authority root, measured billing system, autonomous agent control plane, or central registry truth"
 }
